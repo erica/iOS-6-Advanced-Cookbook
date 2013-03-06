@@ -1,0 +1,22 @@
+<h1>Using Core Text</h1>
+
+<p>This is a simple Core Text example created using pseudo-HTML markup. It supports traits like <b>bold</b>, <i>italics</i>, and <size 18>font size</size>. In addition, you can ask it to do some custom colors like <color red>red</color>, <color green>green</color>, and <color blue>blue</color>.</p>
+<p>It allows you to insert less-than signs by using the standard & lt; entity, e.g.</p>
+<p>a is &lt; b</p>
+<p>You can also split items<br />into<br />several<br />rows</p>
+
+<h1>Header 1</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent condimentum justo vestibulum nisl vestibulum sodales. Vestibulum dapibus sagittis elit, id facilisis eros ullamcorper at. Morbi consectetur tempor augue at convallis. Fusce diam leo.</p>
+
+<p>Porta in mollis sed, molestie in dui. Proin accumsan ante id nunc mollis porttitor. Donec dapibus, nunc vitae consequat sollicitudin, justo enim consequat arcu, a hendrerit velit purus vitae erat. Sed a eros ac elit pulvinar aliquet nec sed quam. Nullam in elit nunc. Integer fringilla orci at enim feugiat et congue ipsum interdum. Mauris elit elit, egestas id fringilla vel, gravida ut orci. Sed mattis risus luctus orci auctor vitae hendrerit est consectetur.</p>
+
+<h2>Header 2</h2>
+<p>In hac habitasse platea dictumst. Quisque eget quam lacus, vitae porta dui. Fusce congue dolor dolor, in mollis diam. Nam volutpat lobortis condimentum. Curabitur libero purus, porta sed facilisis ac, fermentum a turpis. Praesent adipiscing justo at magna faucibus porta. Vivamus vel dolor cursus erat sollicitudin blandit. Maecenas eros libero, vulputate non lacinia quis, tincidunt ut diam. Nunc pretium, tortor eget consequat dictum, nisl urna lacinia ante, et bibendum odio erat quis mauris. Vivamus consequat congue diam, eget gravida justo dictum cursus.</p>
+
+<h3>Header 3</h3>
+<p>Etiam consequat, nibh nec aliquam faucibus, tellus nisi mattis tortor, nec aliquam turpis eros vitae est. Nulla lacus turpis, malesuada at rutrum quis, fringilla a est. Nunc vitae ante felis.</p>
+
+<p>Ut tempor dolor vel massa vehicula iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+<p> Aliquam feugiat justo sed sapien condimentum a tincidunt dui placerat. Vivamus rutrum leo vel nulla lobortis condimentum. Integer justo sapien, consectetur quis fringilla eget, tristique sed diam. Praesent posuere ante eget enim aliquet facilisis id non metus. Aliquam non facilisis sem. Praesent blandit volutpat porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non dolor enim. Aliquam tempor vulputate egestas.</p>

@@ -433,7 +433,12 @@
     for (int i = 0; i < ABMultiValueGetCount(theProperty); i++)
     {
         NSString *label = (__bridge_transfer NSString *)ABMultiValueCopyLabelAtIndex(theProperty, i);
-        [labels addObject:label];
+        if (label == NULL)
+        {
+            [labels addObject:@""];
+        } else {
+            [labels addObject:label];
+        }
     }
     CFRelease(theProperty);
     return labels;

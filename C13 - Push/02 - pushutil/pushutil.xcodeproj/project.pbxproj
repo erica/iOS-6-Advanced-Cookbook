@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4B3D021427B24C00CE678C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4B3D011427B24C00CE678C /* Foundation.framework */; };
+		8E4B3D051427B24C00CE678C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B3D041427B24C00CE678C /* main.m */; };
+		8E4B3D141427B2A100CE678C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4B3D131427B2A100CE678C /* CoreFoundation.framework */; };
+		8E4B3D171427B2A500CE678C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4B3D161427B2A500CE678C /* Security.framework */; };
+		8E4B3D201427B2C100CE678C /* ioSock.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B3D1C1427B2C100CE678C /* ioSock.c */; };
+		8E4B3D211427B2C100CE678C /* APNSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B3D1F1427B2C100CE678C /* APNSHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E4B3CFB1427B24C00CE678C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E4B3CFD1427B24C00CE678C /* pushutil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pushutil; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4B3D011427B24C00CE678C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E4B3D041427B24C00CE678C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E4B3D071427B24C00CE678C /* pushutil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pushutil-Prefix.pch"; sourceTree = "<group>"; };
+		8E4B3D131427B2A100CE678C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8E4B3D161427B2A500CE678C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8E4B3D1C1427B2C100CE678C /* ioSock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioSock.c; sourceTree = "<group>"; };
+		8E4B3D1D1427B2C100CE678C /* ioSock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioSock.h; sourceTree = "<group>"; };
+		8E4B3D1E1427B2C100CE678C /* APNSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNSHelper.h; sourceTree = "<group>"; };
+		8E4B3D1F1427B2C100CE678C /* APNSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNSHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4B3CFA1427B24C00CE678C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4B3D171427B2A500CE678C /* Security.framework in Frameworks */,
+				8E4B3D141427B2A100CE678C /* CoreFoundation.framework in Frameworks */,
+				8E4B3D021427B24C00CE678C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4B3CF21427B24C00CE678C = {
+			isa = PBXGroup;
+			children = (
+				8E4B3D031427B24C00CE678C /* pushutil */,
+				8E4B3D001427B24C00CE678C /* Frameworks */,
+				8E4B3CFE1427B24C00CE678C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4B3CFE1427B24C00CE678C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B3CFD1427B24C00CE678C /* pushutil */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4B3D001427B24C00CE678C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B3D161427B2A500CE678C /* Security.framework */,
+				8E4B3D131427B2A100CE678C /* CoreFoundation.framework */,
+				8E4B3D011427B24C00CE678C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E4B3D031427B24C00CE678C /* pushutil */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B3D041427B24C00CE678C /* main.m */,
+				8E4B3D1C1427B2C100CE678C /* ioSock.c */,
+				8E4B3D1D1427B2C100CE678C /* ioSock.h */,
+				8E4B3D1E1427B2C100CE678C /* APNSHelper.h */,
+				8E4B3D1F1427B2C100CE678C /* APNSHelper.m */,
+				8E4B3D061427B24C00CE678C /* Supporting Files */,
+			);
+			path = pushutil;
+			sourceTree = "<group>";
+		};
+		8E4B3D061427B24C00CE678C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E4B3D071427B24C00CE678C /* pushutil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4B3CFC1427B24C00CE678C /* pushutil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E4B3D0C1427B24C00CE678C /* Build configuration list for PBXNativeTarget "pushutil" */;
+			buildPhases = (
+				8E4B3CF91427B24C00CE678C /* Sources */,
+				8E4B3CFA1427B24C00CE678C /* Frameworks */,
+				8E4B3CFB1427B24C00CE678C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pushutil;
+			productName = pushutil;
+			productReference = 8E4B3CFD1427B24C00CE678C /* pushutil */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4B3CF41427B24C00CE678C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Up To No Good, Inc.";
+			};
+			buildConfigurationList = 8E4B3CF71427B24C00CE678C /* Build configuration list for PBXProject "pushutil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E4B3CF21427B24C00CE678C;
+			productRefGroup = 8E4B3CFE1427B24C00CE678C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4B3CFC1427B24C00CE678C /* pushutil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4B3CF91427B24C00CE678C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4B3D051427B24C00CE678C /* main.m in Sources */,
+				8E4B3D201427B2C100CE678C /* ioSock.c in Sources */,
+				8E4B3D211427B2C100CE678C /* APNSHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E4B3D0A1427B24C00CE678C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E4B3D0B1427B24C00CE678C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E4B3D0D1427B24C00CE678C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pushutil/pushutil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E4B3D0E1427B24C00CE678C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pushutil/pushutil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4B3CF71427B24C00CE678C /* Build configuration list for PBXProject "pushutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4B3D0A1427B24C00CE678C /* Debug */,
+				8E4B3D0B1427B24C00CE678C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E4B3D0C1427B24C00CE678C /* Build configuration list for PBXNativeTarget "pushutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E4B3D0D1427B24C00CE678C /* Debug */,
+				8E4B3D0E1427B24C00CE678C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4B3CF41427B24C00CE678C /* Project object */;
+}

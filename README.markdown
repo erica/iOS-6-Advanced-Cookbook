@@ -43,3 +43,6 @@ Second, standard implementation and header files are provided when the class its
 You should be able to build these projects for the simulator or use your team provision to build and deploy to devices. Before compiling, make sure you select a deployment target using the pop-up menu at the top-left of the Xcode window. 
 
 For the most part, the samples for this book use a single application identifier, com.sadun.helloworld. This book uses one identifier to avoid clogging up your iOS device with dozens of samples at once. Each sample replaces the previous one, ensuring that SpringBoard remains relatively uncluttered. If you want to install several samples at once, simply edit the identifier, adding a unique suffix, such as com.sadun.helloworld.table-edits. You'll want to edit the display name so you can tell instantly which project is which. Samples use the same icons and launch images as well.
+
+<h3>What about ARC?</h3>
+The code is written specifically for iOS 6 and later (although parts may be backward compatible) and uses ARC. If you intend to incorporate this code into pre-ARC projects you can enable ARC on a file-by-file basis. In Targets > Build Phases, add the -fobjc-arc compiler flag.

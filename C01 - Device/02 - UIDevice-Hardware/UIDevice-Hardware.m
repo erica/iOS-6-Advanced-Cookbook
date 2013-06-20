@@ -50,13 +50,17 @@
  iPad2,3   ->    iPad 2G, CDMA 3G, K95
  iPad2,4   ->    iPad 2G, (Smaller chip set) K93a
  
+ iPad2,5   ->    iPad mini, WiFi
+ iPad2,6   ->    iPad mini, GSM
+ iPad2,7   ->    iPad mini, CDMA
+ 
  iPad3,1   ->    iPad 3G, WiFi J1
  iPad3,2   ->    iPad 3G, CDMA J2A, ?J2
  iPad3,3   ->    iPad 3G, GSM J33
 
- iPad4,1   ->    (iPad 4G, WiFi)
- iPad4,2   ->    (iPad 4G, CDMA)
- iPad4,3   ->    (iPad 4G, GSM)
+ iPad3,4   ->    (iPad 4G, WiFi)
+ iPad3,5   ->    (iPad 4G, GSM)
+ iPad3,6   ->    (iPad 4G, CDMA)
 
  AppleTV2,1 ->   AppleTV 2, K66
  AppleTV3,1 ->   AppleTV 3, ??
@@ -180,9 +184,22 @@
 
     // iPad
     if ([platform hasPrefix:@"iPad1"])              return UIDevice1GiPad;
-    if ([platform hasPrefix:@"iPad2"])              return UIDevice2GiPad;
-    if ([platform hasPrefix:@"iPad3"])              return UIDevice3GiPad;
-    if ([platform hasPrefix:@"iPad4"])              return UIDevice4GiPad;
+    if ([platform hasPrefix:@"iPad2"]) {
+        NSUInteger lastCharacterIndex = platform.length - 1;
+        if ([platform characterAtIndex:lastCharacterIndex] < '5') {
+            return UIDevice2GiPad;
+        } else {
+            return UIDevice1GiPadMini;
+        }
+    }
+    if ([platform hasPrefix:@"iPad3"]) {
+        NSUInteger lastCharacterIndex = platform.length - 1;
+        if ([platform characterAtIndex:lastCharacterIndex] < '4') {
+            return UIDevice3GiPad;
+        } else {
+            return UIDevice4GiPad;
+        }
+    }
     
     // Apple TV
     if ([platform hasPrefix:@"AppleTV2"])           return UIDeviceAppleTV2;
@@ -226,6 +243,8 @@
         case UIDevice3GiPad : return IPAD_3G_NAMESTRING;
         case UIDevice4GiPad : return IPAD_4G_NAMESTRING;
         case UIDeviceUnknowniPad : return IPAD_UNKNOWN_NAMESTRING;
+            
+        case UIDevice1GiPadMini : return IPAD_MINI_1G_NAMESTRING;
             
         case UIDeviceAppleTV2 : return APPLETV_2G_NAMESTRING;
         case UIDeviceAppleTV3 : return APPLETV_3G_NAMESTRING;

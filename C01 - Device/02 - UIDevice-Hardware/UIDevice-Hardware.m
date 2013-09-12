@@ -50,6 +50,10 @@
  iPad2,3   ->    iPad 2G, CDMA 3G, K95
  iPad2,4   ->    iPad 2G, (Smaller chip set) K93a
  
+ iPad2,5   ->    iPad Mini, Wifi
+ iPad2,6   ->    iPad Mini, GSM 3G
+ iPad2,7   ->    iPad Mini, GSM + CDMA
+ 
  iPad3,1   ->    iPad 3G, WiFi J1
  iPad3,2   ->    iPad 3G, CDMA J2A, ?J2
  iPad3,3   ->    iPad 3G, GSM J33
